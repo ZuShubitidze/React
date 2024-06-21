@@ -1,0 +1,13 @@
+.books-container {
+  text-align: center;  
+  margin-top: 20px;
+}
+
+.bookImg {
+  width: 40vw;
+  height: 20vh;
+}
+
+.bookBtn {
+  margin: 50px;
+}
