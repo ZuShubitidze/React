@@ -58,11 +58,11 @@ class State extends Component {
             {this.state.done.map((doneAssignments) => (
               <div>
                 <p>
-                  Completed Assignment: {doneAssignments.name}
+                  Completed Assignment: {doneAssignments.name} 
                   <button onClick={deleteAssignment}>
                     Delete Assignment
                   </button>
-                </p>
+                </p> 
               </div>
             ))}
           </div>
