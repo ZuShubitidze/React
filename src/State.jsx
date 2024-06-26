@@ -59,7 +59,8 @@ class State extends Component {
               <div>
                 <p>
                   Completed Assignment: {doneAssignments.name} 
-                  <button onClick={deleteAssignment}>
+                  {/* Delete Assignment onClick */}
+                  <button>  
                     Delete Assignment
                   </button>
                 </p> 
@@ -68,6 +69,7 @@ class State extends Component {
           </div>
       </div>
     )
+    // InComplete :::
   }
 }
 
