@@ -4,8 +4,7 @@ class State extends Component {
 
   state = {
     inputValue: '',
-    toDo: [{name: 'Assignment'},{name: 'Homework'}],
-    done: [{name: 'Homework'},]
+    toDo: [{name: 'Assignment'},{name: 'Homework'}]
   }
 
   onChange = (event) => {
@@ -28,23 +27,24 @@ class State extends Component {
     })
   }
 
-  deleteAssignment = (name) => {
-    const toDo = this.state.filter((assignment) => assignment.name !== name)
-    this.setState(
-      toDo
-    )
+  shouldComponentUpdate(prevState) {
+    if((this.state.toDo != prevState.toDo)){
+      return true
+    }
+    return false
   }
 
   render() {
+    console.log("render")
     return (
       <div>
           {this.state.toDo.map((Assignment) => (
             <div>
               <p>
                 Assignment name: {Assignment.name} 
-                <button >
+                {/* <button >
                   Complete Assignment
-                </button>
+                </button> */}
               </p>
             </div>
           ))}
@@ -55,21 +55,10 @@ class State extends Component {
             </form>
           </div>
           <div>
-            {this.state.done.map((doneAssignments) => (
-              <div>
-                <p>
-                  Completed Assignment: {doneAssignments.name} 
-                  {/* Delete Assignment onClick */}
-                  <button>  
-                    Delete Assignment
-                  </button>
-                </p> 
-              </div>
-            ))}
+            
           </div>
       </div>
     )
-    // InComplete :::
   }
 }
 
