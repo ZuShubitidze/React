@@ -1,7 +1,6 @@
 // import Profile from "./Profile.jsx";
 // import BooksList from "./Books/BooksList";
-import UseState from "./UseState";
-import State from "./State";
+import MyList from "./MyList.jsx";
 
 function App() {
   // return <Profile />;
@@ -9,7 +8,7 @@ function App() {
   return (
     <>
       {/* <UseState /> */}
-      <State />
+      <MyList />
     </>
   )
 }
