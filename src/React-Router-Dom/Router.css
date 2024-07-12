@@ -1,0 +1,47 @@
+#MainPageHeader {
+  text-align: center;
+}
+
+#MainPageHeader img {
+  width: 20vw;
+  height: 30vh;
+}
+
+#AboutPageContainer {
+  text-align: center;
+}
+
+#Link {
+  display: flex;
+  gap: 5vh;
+  justify-content: center;
+}
+
+#Link a{
+  text-decoration: none;
+}
+
+#Link a:visited {
+  color: red;
+}
+
+#Link a:hover {
+  color: blue;
+}
+
+#ParamPage {
+  text-align: center;
+  color: red;
+}
+
+#ErrorPage {
+  text-align: center;
+  color: red;
+  transition: all 1s;
+  margin-top: 40vw;
+  font-size: 200%;
+}
+
+#ErrorPage:hover {
+  transform: scale(3);
+}
